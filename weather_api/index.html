@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Matthijs">
+    <title>WEATHER API</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Weer API</h1>
+      <a href="http://www.weerlive.nl/delen.php">Bron:</a>
+      <input type="button" class="buttons" value="Laat een selectie zien" id="weatherButton" />
+      <input type="button" class="buttons" value="Laat alle data zien" id="weatherButton2" />
+      <input type="button" class="buttons" value="ticker tape" id="weatherTickerTape" />
+        <br>
+        <br>
+       <div id="weatherHere">
+       </div>
+       <br>
+       <div class="ticker-wrap">
+         </div>
+    </div>
+    <marquee behavior="scroll" direction="left" >
+     <span id="tickerTape"></span>
+  </marquee>
+ <script src="ajax_callback.js"></script>
+ <script src="weer_api.js"></script>
+  </body>
+</html>
